@@ -2,7 +2,7 @@
 MicroXRCEAgent udp4 -p 8888
 # Terminal 2
 cd ~/PX4-Autopilot
-make px4_sitl gz_x500_lidar_2d
+make px4_sitl gz_x500
 # Terminal 3 
 cd ~/ros2_ws
 colcon build --packages-select px4_quantum_nav --symlink-install
