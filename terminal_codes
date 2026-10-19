@@ -1,1 +1,9 @@
-
+# Terminal 1
+MicroXRCEAgent udp4 -p 8888
+# Terminal 2
+make px4_sitl gz_x500_lidar_2d
+# Terminal 3 
+cd ~/ros2_ws
+colcon build --packages-select px4_quantum_nav --symlink-install
+source install/setup.bash
+ros2 run px4_quantum_nav navigator
