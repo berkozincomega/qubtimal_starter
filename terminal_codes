@@ -8,3 +8,5 @@ cd ~/ros2_ws
 colcon build --packages-select px4_quantum_nav --symlink-install
 source install/setup.bash
 ros2 run px4_quantum_nav navigator
+# Terminal 4
+/usr/bin/python3 ~/ros2_ws/src/px4_quantum_nav/px4_quantum_nav/qubtimal_web_gcs.py
